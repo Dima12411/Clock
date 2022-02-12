@@ -3,6 +3,7 @@ import './App.css';
 import DigitalClock from "./components/DigitalClock";
 import styles from './components/Clock.module.css'
 import AnalogClock from "./components/AnalogClock";
+import Button from "./components/Button/Button";
 
 function App() {
     const [change, setChange] = useState<boolean>(true)
@@ -12,8 +13,11 @@ function App() {
             <div>
                 {change ? <AnalogClock/> : <DigitalClock/>}
             </div>
-            <div className={styles.button}>
-                <button onClick={() => setChange(!change)}>Change to clock</button>
+            <div className={styles.buttonBlock}>
+                <Button
+                change={change}
+                setChange={setChange}
+                />
             </div>
         </div>
     );
