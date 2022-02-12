@@ -6,3 +6,13 @@ App {
     align-items: center;
     justify-content: center;
 }
+
+.button {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    border: 10px black;
+    background: rgba(241, 255, 197, 0.7);
+    margin-top: 20px;
+}
